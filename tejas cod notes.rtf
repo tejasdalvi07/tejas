@@ -1,0 +1,258 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Times New Roman;}}
+{\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\f0\fs56\lang9 BASIC STRUCTURE OF COMPUTER \par
+\ulnone\f1\fs28 A Computer Consists Of Five Functionally Independent main parts \par
+1.INPUT.\par
+2.MEMORY.\par
+3.ARITHMETIC LOGIC.\par
+4.OUTPUT.\par
+5.CONTROL UNIT.\par
+1\ul .INPUT\ulnone :- The Input Unit Converts The External World Data Into Binary Format Which Can Be Understood By The Cpu.\par
+Eg:-Keyboard,Mouse,Joystick,etc.\par
+2.\ul OUTPUT\ulnone :- a. The Output Unit Is The Counterpart Of The Input Unit.\par
+b.Its Function Is To Send Processed Result To The Outside World .\par
+c. A Familiar Example Of Such a Device Is a Printer.\par
+3\ul .PROCESSOR\ulnone :- a.This Is The Brain Of The Machine.\par
+b.It Is Responsible For Carrying Out The Computational Tasks.\par
+c.Processor Divides The Operations Into Basic Steps.\par
+d.Each Basic Steps Is Executed In One Clock Cycle.\par
+e.Control Unit Works With a Reference Signal Called Processor Work.\par
+4.\ul MEMORY:- \ulnone The Memory Stores Data,Result And Program.\par
+There Are Two Classes Of Storage\par
+a.Primary Memory.\par
+b.Secondary Memory.\par
+a.\ul PRIMARY MEMORY\ulnone :- i.Primary Memory Is Also Called Main Memory.\par
+ii.In Primary Memory\par
+ROM-Read Only Memory.(non-volatile)\par
+RAM-Random Access Memory .(volatile)\par
+b.\ul SECONDARY MEMEORY\ulnone :-Secondary Memory Is Used For Bulk Storage Of Data Non Volatile.\par
+\ul\fs44 BASIC DIAGRAMIC REPRESENTATION OF A COMPUTER\par
+\par
+\par
+\par
+\par
+\par
+\par
+\ulnone\fs28 The Direction of arrow describes the data flow between the different parts of the system.\par
+for eg:-  5 + 2=7\par
++ is called assignment operator & 5,2 are called operands.\par
+The operators which works on two operand is called binary operators.\par
+\ul\fs44 BASIC OPERATIONAL CONCEPTS\par
+\ulnone\fs28 For an example for instructions (assembly language)\par
+Load R2,LOC-"(Location)\par
+a.This instruction reads the contents of a memory location whose address is represented symbolically by the label LOC and loads them into processor register R2.\par
+b.Execution of this instruction requires several steps.\par
+c.First the instruction is fetched from the memory into the processor.\par
+d.Next the operator to be perfomed is determined by the control unit.\par
+e.The operand at LOC is then fetched from the memory into the processor.\par
+f.Finally the operand is stored in register R2.\par
+\ul\fs44 CONNECTION BETWEEN THE PROCESSOR AND THE MAIN MEMORY \par
+\fs28\line\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\ulnone Multiple registers are needed to facilitate the operation of the cpu.\par
+\ul MAR\ulnone :-Memory Address Registers.\par
+\ul MDR\ulnone :-Memory Data Registers .\par
+\ul IR\ulnone :-Instruction registers.\par
+\ul PC\ulnone :-Program Counter.\par
+\ul RO-RN-1\ulnone :-General Purpose Register.\par
+\ul ALU\ulnone :-Arithmetic & Logic Unit.\par
+\fs44\par
+\ul BUSES\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\fs28\par
+\ulnone Buses are used for communication between different parts of the computer.\par
+a.The different part of the computer need to communicate with each other.\par
+b.The set of electrical lines that connect all the parts of a computer are called buses.\par
+c.There are three types of buses\par
+i.ADDRESS BUSES \par
+ii.DATA BUSES \par
+iii.CONTROL BUSES\par
+i.\ul ADDRESS BUS\ulnone :-\par
+Eg:-A 2 line bus can access depicted by\par
+         0  0\par
+         0  1\par
+         1  0\par
+         1   1\par
+A 2 line address bus allows 2  = 4 address \par
+Eg:-A 3 line bus can access 8 location depicted by \par
+      0  0  0\par
+      0  0  1\par
+      0  1  0\par
+      0  1  1\par
+      1  0  0\par
+      1  0  1\par
+      1  1  0\par
+      1  1  1\par
+A 3 line address bus allow 2  = 8 address.\par
+ii. \ul DATA BUS\ulnone :-  a.This is the bus used to transfer the actual data to and from the locations.\par
+b.It's a two way bus as data may be going to the processor (read) or coming from the processor (write).\par
+iii.\ul CONTROL UNIT\ulnone :- The control bus is a collection of lines each with a different operating at a different time.\par
+There are five kinds of lines on the control bus\par
+ a.Read Line:-The process or activate this line to show it wants to be sent data to be reads from another part of the computer system.\par
+b.Write Line :-The processor activates this line to show it wants to write data to another part of the computer system.\par
+c.Clock Line:-1.This line sends a regular series of pulses (measured in hertz).\par
+\ul 2.\ulnone It controls the speed and timing of all operations in the computer.\par
+d.Reset Line:-This line resets the registers inside the processor preparing it for carrying out a network.\par
+e.Interrupt Line:- 1.A device sends a signal on this line to interrupt the processor when they need attention .(eg :- a printer out of paper ).\par
+\ul 2. \ulnone The processsor uses the 3 buses to communicate with the main memory to work with the data stored there.\par
+3. The most important operation which the processor carries out is memory read and memory write.\par
+\ul MEMORY READ AND WRITE\par
+1.\ulnone Memory Read:- a.The processor copies the required address onto the address bus.\par
+b.The processor then activates the read line on the control bus.\par
+c.The memory controller copies the data from the required address to the data bus and the data is transferred from the main memory to the processor.\par
+2.Memory Write:- a.The processor copies the required address onto the address bus.\par
+b.The processor copies the data onto the databus.\par
+c.Processor activates the write line on the control bus.\par
+d.Memory controller copies the data from the data from the data bus and put it into the required memory location.\par
+\ul INSIDE THE PROCESSOR\f0\fs22\par
+\ulnone\f1\fs28 The following components are found in a processor.\par
+1.Registers:-A register is a storage location inside the processor .\par
+a.Data being used.\par
+b.Instruction being executed.\par
+c.Address about to be acessed.\par
+Registers allow the fastest access as they are on the same chip as the processor.\par
+2.Control Unit:-\par
+\par
+\par
+3.Arithmetic Logic Unit :- a.Carrying out calculations on data being processed by a progam.\par
+b. The processor fetches instruction and executes them .\par
+c. The time that the processor spends in the fetching an instruction and executing it is known as the fetch execute cycle.\par
+4.Memory:-\par
+a.Registers.\par
+b.Cache memory.\par
+c.Main memory.\par
+d.Backing store.\par
+a. Cache Memory:- i.This is the second fastest type of memory.\par
+ii.It is used to store frequently used data and instruction.\par
+iii. The processor looks in the cache memory before going to the main memory.\par
+iv.If the data is found here then it is very quickly accessed. \par
+5.Backing Store:-i. This is the slowest type of memory.\par
+ii.it is needed as it keeps data even when the power is switched off.\par
+iii.Backing store also have larger capacity than the faster memory.\par
+eg:- HDD,CD,DVD,Flash Memory,etc.\par
+\ul REPRESENTATION OF NUMBERS & CHARACTERS\ulnone  \par
+In case of digital representation energy thing is represented only as numbers.\par
+i.A bit (binary digit) is the most important basic unit of information of the computer.\par
+ii.A byte is a group of 8 bits.\par
+iii.A word in a group of bytes .\par
+Words can be of any numbers of bits/ bytes.\par
+eg:-16,32or 64 bits.\par
+\ul\fs44 INTEGER REPRESENTATION\fs28  \par
+\ulnone An integer can be represented in one of the following\par
+i. Signed Integer Representation\par
+a.In order to represent negative numbers computer system allocate the high order bit to indicate the sign of the value.\par
+                             H T U \par
+                             5 6 7           0 0 0 0 0 1 0 1\par
+b. The rest of the bits contain the value of the number.\par
+c.Signed numbers can be represented in 3 ways.\par
+- Signed magnitude.\par
+-One's compliment.\par
+-Two's compliment.\par
+d.So in an 8 bit word,the signed magnitude representation places the absolute value of the number in the 7 bits to the right of the sign bit.\par
+eg:- +3 is represented as 00000011\par
+       -3 is represented as 10000011.\par
+v.Arithmetic is perfomed on signed magnitude numbers in the same way as done by humans.\par
+eg:-to add 75 and 46\par
+a. We will first convert them to binary and then add from right most bit working our way left.\par
+75-         1   0   0   1   0   1   1\par
+46-         0   1   0   1   1   1   0\par
+              1   1   1   1   0   0   1\par
+i. So although the signed magnitude is easy to understand,it requires complicated hardware to implement\par
+ii.Another disadvantages is that it  allows 2 representation of for zero and negative zero.\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+i.In all of three system ,the left most bit is 0 for positive number.\par
+\fs56 *ONE'S CO PLEMENT\fs28  \par
+i.eg:-addition of 1 ( 11111110) to +2 ( 00000010)\par
+                     1   1   1   1   1   1   1   0\par
+                     0   0   0   0   0   0   1   0\par
+                     0   0   0   0   0   0   0   0   \par
+                                                       1\par
+                     0   0   0   0   0   0   0   1\par
+*CHARACTER REPRESENTATION \par
+I.ASCII:-American Standard Code For Information Interchange.\par
+II.Scheme used to represent characters.\par
+III.Each character is represented using 7 bit binary code.\ul\f0\fs22\par
+}
+ 
